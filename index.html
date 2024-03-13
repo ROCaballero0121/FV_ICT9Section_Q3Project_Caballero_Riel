@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Q3Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+body{
+  background-color: #a24631;
+  margin-bottom: 2000px;
+  color: white;
+ font-family: Bembo;
+}
+.gallery{
+  display: inline-block;
+  border: 1px solid dimgray;
+  margin: 15px;
+  width: 270px;
+  height: 250px;
+}
+.gallery:hover{
+  border: 1px solid darkred;
+}
+.gallery img{
+  width: 100%;
+  height: 100%;
+}
+
+
+}
+.note-container{
+  position: relative;
+}
+hr{
+  height: 6px;
+  color: white;
+  margin: 30px;
+}
+h1{
+  font-family: Bembo;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+ font-style: italic;
+}
+p{
+  font-size: 20px;
+}
+.bg-img {
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/laufey-press-photo-tour-announce-2-pc-gemma-warren-1-64fe8885b9ab4.jpg?resize=980:*");
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+.search-container {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.5);  
+  border-radius: 5px; 
+  padding: 5px;
+}
+
+.search-container input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 12px;
+  background-color: transparent; 
+}
+
+.search-container button {
+  padding: 6px 10px; 
+  background-color: transparent; 
+  border: none;
+  cursor: pointer;
+}
+.topnav {
+  overflow: hidden;
+  background-color: bg-default;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#logo{
+  height: 40px;
+  width: 170px;
+}
+footer{
+  background-color: #111;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+.footerContainer{
+  width: 100%;
+  padding: 5px 20px;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+.socialIcons{
+  display: flex;
+  justify-content: center ;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1ox;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+  .footerNav ul{
+    flex-direction: column;
+  }
+  .footerNav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
+.latestAlbum{
+  text-align: center;
+}
+#Table{
+  margin-left: 100px;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+  <div class="bg-img">
+    <div class="container">
+      <div class="topnav">
+       <a class="navbar-brand" href="#"><img src="https://images.squarespace-cdn.com/content/v1/60300340d27ffb2c6946ccbe/b3ead9bf-70b5-44fc-8e06-34b66ee83ec6/LaufeyLogo-BewitchedEra-White.png?format=1500w" id="logo" class="potato"></a>   
+        <a target="blank" href="https://www.laufeymusic.com/tour">Tour</a>
+        <a target="blank" href="https://www.laufeymusic.com/listen">Listen</a>
+        <a target="blank" href="https://www.youtube.com/channel/UChpKl3waLmccNeYH9LGYjUQ">Videos</a>
+        <a target="blank" href="https://www.laufeymusic.com/contact">Contact</a>
+        <a target="blank" href="https://www.laufeymusic.com/">Main Website (Ref.)</a>
+        <div class="search-container">
+          <form action="/search" method="GET">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<h1>Laufey (lāy-vāy)</h1>
+<hr>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <img id="bewichi" class="rounded" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Laufey_-_Bewitched.png/220px-Laufey_-_Bewitched.png">
+      <p class="latestAlbum">Laufey's latest album:"Bewitched"</p>
+    </div>
+    <div class="col-md-6" id="Synopsis1">
+      <h2>Laufey's Background</h2>
+      <p>The Los Angeles-based Laufey (pronounced lāy-vāy) continued her story by writing and recording Bewitched, her second album. Inspired by jazz greats and classical masters while possessing a point of view that could only be conveyed by a 21st-century twentysomething, Bewitched represents an expansion of Laufey’s sonic palette. Tracks like the breezy bossa nova cut “From the Start” and the smoldering string-assisted ballad “Promise” have classic songcraft and intricate arrangements that make them feel instantly timeless, while Laufey’s conversational lyrics give her music a relatability to the next generation of jazz and classical aficionados.  
+      <br><br>
+      Laufey’s self-assured musicianship and deeply felt lyrics take the idea of “classic” music, whether it’s slotted as classical or jazz—or even chart-topping pop—and humanize it, creating a deep-seated connection with listeners that goes deeper than hitting “play” on a streaming service. “There are very few examples of artists who are onstage with an orchestra one day and making TikToks the next,” she notes dryly. Laufey’s straddling of those two worlds has put her in a singular place across music, and with Bewitched, she’s ready to ascend to the next level. </p>
+      <br><br>
+
+      <div class="note-container">
+        <p>“As a musician, my goal is to bring jazz and classical music to my generation through a more accessible road,” </p>
+          <div class="divider"></div>
+            <h3 class="float-right">- Laufey's Note</h3>
+          </div>
+      </div> 
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3>Laufey's Gallery</h3>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<center>
+<div class="gallery">
+  <a target="_blank" href="https://www.instagram.com/p/C28hPBCvl-b/">
+    <img src="https://www.j-14.com/wp-content/uploads/2024/02/laufey-grammys.jpg?fit=800%2C533&quality=86&strip=all" alt="LaufeyGrammy">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.instagram.com/p/C4LrVjNx5mL/">
+    <img src="https://cdn.discordapp.com/attachments/921580245155463210/1216402266500763729/image.png?ex=660041e3&is=65edcce3&hm=0c0ab8c938b70bb801cfdc47597f39b550f9b534602de17de35de8cac9aa6ec1&" alt="LaufeyGoddess">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.instagram.com/p/C32vDBxr5hg/">
+    <img src="https://cdn.discordapp.com/attachments/921580245155463210/1216403288354721792/image.png?ex=660042d7&is=65edcdd7&hm=7074b1d409bf1a2d661511028e9b20e046194f5630ed536d9a3bb697744541ea&" alt="LaufeyGrammy">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.instagram.com/p/CyRllEEPdn5/?img_index=1">
+    <img src="https://cdn.discordapp.com/attachments/921580245155463210/1216403734813216868/image.png?ex=66004342&is=65edce42&hm=91b9543f0176222d4f4704e90d166e6240d4e96d1a0976ceb707aec5ea849fde&" alt="LaufeyGrammy">
+  </a>
+</div>
+</center>
+
+<hr>
+
+<form>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" class="form-control" id="email" placeholder="Enter your favorite song(s)!" name="email">
+      </div>
+      <div class="col-md-6">
+        <input type="password" class="form-control" placeholder="Enter your favorite" name="pswd">
+      </div>
+    </div>
+      <br>
+      <div class="form-group text-center">
+        <button type="button" class="btn btn-outline-success btn-lg">Submit</button>
+      </div>
+  </div>
+</form>
+
+<footer>
+  <div class="footerContainer">
+    <div class="socialIcons">
+        <a target="blank" href="https://www.facebook.com/laufeymusic"><i class="fa-brands fa-facebook"></i></a>
+        <a target="blank" href="https://www.instagram.com/laufey"><i class="fa-brands fa-instagram"></i></a>
+        <a target="blank" href="https://www.tiktok.com/@laufey"><i class="fa-brands fa-tiktok"></i></a>
+        <a target="blank" href="https://open.spotify.com/artist/7gW0r5CkdEUMm42w9XpyZO?si=jJYIkwSZTEyyAgxC7akm9A"><i class="fa-brands fa-spotify"></i></a>
+        <a target="blank" href="https://www.youtube.com/channel/UChpKl3waLmccNeYH9LGYjUQ"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footerNav">
+        <ul>
+            <li><a target="blank" href="https://averylaufeyday.com/?utm_campaign=AVLD&utm_medium=Main%20Website%20Footer&utm_source=Laufey">A Very Laufey Day</a></li>
+            <li><a target="blank" href="https://www.laufeymusic.com/cookie-policy">Cookie Policy</a></li>
+            <li><a target="blank" href="https://www.laufeymusic.com/privacy-policy">Privacy Policy</a></li>
+        </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
